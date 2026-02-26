@@ -34,7 +34,7 @@
         <label for="menu-toggle" class="menu-button">Menu</label>
         <ul class="menu">
           <li><a href="#breaking-news">Breaking News</a></li>
-          <li><a href="#featured-aticles">Featured Articles</a></li>
+          <li><a href="#featured-articles">Featured Articles</a></li>
           <li><a href="#alerts">Alerts</a></li>
           <li><a href="#social">Social</a></li>
         </ul>
@@ -192,7 +192,7 @@
           } else {
             // No class set yet, determine system preference
             const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            body.classList.add(prefersDark ? 'dark-mode' : 'light-mode'); // Had to switch 'dark-mode' and 'light-mode', otherwise user has to toggle dark mode twice to change theme.
+            body.classList.add(prefersDark ? 'light-mode' : 'dark-mode');
           }
         });
       </script>
