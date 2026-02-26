@@ -163,7 +163,7 @@ a:hover, .menu-button:hover {
 }
 #breaking-news section:hover, #featured-articles section:hover {
   cursor: pointer;
-  scale: 1.05;
+  transform: scale(1.05);
 }
 #breaking-news h3 {
   border-bottom: 1px solid var(--watchdog-white);
@@ -377,11 +377,10 @@ a, .mobile-nav, legend {
     background: var(--watchdog-white);
     color: var(--truth-text);
   }
-
 }
 
 /* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
-@supports (selector(:has(*))) {
+@supports (display:block) {
   body:has(#menu-toggle:checked) .menu {
     display: block; 
   }
